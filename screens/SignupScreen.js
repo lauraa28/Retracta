@@ -100,7 +100,7 @@ export default function SignupScreen({ navigation }) {
         <TouchableOpacity
   activeOpacity={0.85}
   style={styles.buttonWrap}
-  onPress={() => navigation.replace('LoginScreen')}
+  onPress={() => navigation.replace('Login')}
 >
   <LinearGradient colors={AUTH_GRADIENT} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.button}>
     <Text style={styles.buttonText}>Criar conta</Text>

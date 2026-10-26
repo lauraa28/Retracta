@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity, Switch, ScrollView
 import { LinearGradient } from 'expo-linear-gradient';
 import { Feather, AntDesign } from '@expo/vector-icons';
 import AuthWave from '../components/AuthWave';
-import HomeScreen from './homeScreen';
 const AUTH_GRADIENT = ['#5B93F5', '#2E5BC8'];
 
 export default function LoginScreen({ navigation }) {
@@ -87,7 +86,7 @@ export default function LoginScreen({ navigation }) {
         <TouchableOpacity
   activeOpacity={0.85}
   style={styles.buttonWrap}
-  onPress={() => navigation?.replace(HomeScreen)}
+  onPress={() => navigation?.replace('MainApp')}
 >
   <LinearGradient colors={AUTH_GRADIENT} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.button}>
     <Text style={styles.buttonText}>Entrar</Text>

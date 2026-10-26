@@ -158,7 +158,7 @@ export default function ConfigScreen() {
         </TouchableOpacity>
 
         {/* GERAL */}
-        <SectionLabel icon="sliders">GERAL</SectionLabel>
+        <SectionLabel>GERAL</SectionLabel>
         <View style={styles.card}>
           <ToggleRow
             title="Modo Inteligente"
@@ -174,7 +174,7 @@ export default function ConfigScreen() {
         </View>
 
         {/* CONEXÃO */}
-        <SectionLabel icon="wifi">CONEXÃO</SectionLabel>
+        <SectionLabel>CONEXÃO</SectionLabel>
         <View style={styles.card}>
           <View style={styles.wifiRow}>
             <View style={{ flex: 1 }}>
@@ -194,7 +194,7 @@ export default function ConfigScreen() {
         </View>
 
         {/* NOTIFICAÇÕES */}
-        <SectionLabel icon="bell">NOTIFICAÇÕES</SectionLabel>
+        <SectionLabel>NOTIFICAÇÕES</SectionLabel>
         <View style={styles.card}>
           {notifications.map((n, idx) => (
             <React.Fragment key={n.id}>
@@ -210,7 +210,7 @@ export default function ConfigScreen() {
         </View>
 
         {/* PRIVACIDADE */}
-        <SectionLabel icon="shield">PRIVACIDADE</SectionLabel>
+        <SectionLabel>PRIVACIDADE</SectionLabel>
         <View style={styles.card}>
           <ToggleRow
             title="Dados de uso anônimos"
@@ -223,7 +223,7 @@ export default function ConfigScreen() {
         </View>
 
         {/* AJUDA E MANUAL */}
-        <SectionLabel icon="book-open">AJUDA E MANUAL</SectionLabel>
+        <SectionLabel>AJUDA E MANUAL</SectionLabel>
         <View style={styles.card}>
           {helpItems.map((item, idx) => (
             <React.Fragment key={item.id}>
@@ -243,7 +243,7 @@ export default function ConfigScreen() {
         </View>
 
         {/* SOBRE */}
-        <SectionLabel icon="info">SOBRE</SectionLabel>
+        <SectionLabel>SOBRE</SectionLabel>
         <View style={styles.card}>
           <View style={styles.aboutRow}>
             <View style={{ flex: 1 }}>
