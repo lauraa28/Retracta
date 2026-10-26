@@ -116,3 +116,70 @@ export const device = {
   ],
   lastSync: 'Há 2 min',
 };
+export const motorAlert = {
+  active: true,
+  title: 'Alerta: motor com esforço elevado',
+  message: 'Verifique se há obstrução no trilho do varal',
+};
+
+export const generalSettings = {
+  smartMode: true,
+  sensorSensitivity: 'Média',
+};
+
+export const connectionSettings = {
+  wifiName: 'Casa_2.4G',
+  wifiDescription: 'O dispositivo usa essa rede para se comunicar com o aplicativo',
+  signalStrength: 4, // de 1 a 5 barras
+  retractionDelay: '3s',
+};
+
+export const notificationSettings = [
+  {
+    id: 1,
+    title: 'Alerta de chuva',
+    subtitle: 'Avisa quando o sensor detecta chuva e o varal for recolhido automaticamente',
+    value: true,
+  },
+  {
+    id: 2,
+    title: 'Agendamentos',
+    subtitle: 'Confirma cada ação programada antes de executar',
+    value: true,
+  },
+  {
+    id: 3,
+    title: 'Mudança de status',
+    subtitle: 'Notifica toda vez que o varal abre ou fecha',
+    value: false,
+  },
+  {
+    id: 4,
+    title: 'Manutenção preventiva',
+    subtitle: 'Lembrete quando a próxima revisão estiver próxima',
+    value: true,
+  },
+];
+
+export const privacySettings = {
+  anonymousData: true,
+};
+
+export const helpItems = [
+  { id: 1, icon: 'download', color: '#4C8DF0', title: 'Manual de instalação', subtitle: 'Como instalar o varal na parede' },
+  { id: 2, icon: 'tool', color: '#F0A93A', title: 'Manual de montagem', subtitle: 'Passo a passo de montagem' },
+  { id: 3, icon: 'file-text', color: '#2FBE79', title: 'Manual de manutenção', subtitle: 'Cuidados, limpeza e conservação' },
+  { id: 4, icon: 'help-circle', color: '#6C4CE0', title: 'Perguntas frequentes', subtitle: 'FAQ com as dúvidas mais comuns' },
+  { id: 5, icon: 'alert-circle', color: '#E8452F', title: 'Solução de problemas', subtitle: 'Diagnóstico de erros e falhas' },
+  { id: 6, icon: 'message-circle', color: '#1FB88C', title: 'Contato com suporte', subtitle: 'Fale conosco — seg a sex, 8h–18h' },
+];
+
+export const aboutInfo = {
+  appVersion: '2.1.0',
+  appVersionDate: 'Atualizado em julho de 2025',
+  appVersionStatus: 'Atual',
+  firmwareVersion: 'RTR-FW-1.4.2',
+  firmwareDescription: 'Software interno que controla o motor e os sensores do dispositivo',
+  uptime: '99,8%',
+  uptimeDescription: 'Tempo total em que o dispositivo ficou ligado e operando corretamente',
+};
